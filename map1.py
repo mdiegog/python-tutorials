@@ -25,7 +25,7 @@ for lt, ln, el in zip(lat, lon, elev):
 fgp = folium.FeatureGroup(name="Population")
 
 fgp.add_child(folium.GeoJson(data=open('world.json','r', encoding='utf-8-sig').read(),
-style_function=lambda x: {'fillColor':'green' if x['properties']['POP2005'] < 10000000 else 'orange' if 10000000 <= x['properties']['POP2005'] < 20000000 else 'red'}))
+style_function=lambda x: {'fillColor':'green' if x['properties']['POP2005'] < 15000000 else 'orange' if 15000000 <= x['properties']['POP2005'] < 100000000 else 'red'}))
 
 map.add_child(fgv)
 map.add_child(fgp)
