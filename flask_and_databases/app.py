@@ -4,8 +4,8 @@ from send_email import send_email
 from sqlalchemy.sql import func
 
 app=Flask(__name__)
-#app.config['SQLALCHEMY_DATABASE_URI']='postgresql://postgres:postgres@localhost/height_collector'
-app.config['SQLALCHEMY_DATABASE_URI']='postgres://edtdcaosrrepyl:3dc5c01129714e48dac1930bf4dbb81d62a4c342635842c90f3f4796d7a23cd5@ec2-23-23-80-20.compute-1.amazonaws.com:5432/dbofqjn1mmqi6o?sslmode=require'
+app.config['SQLALCHEMY_DATABASE_URI']='postgresql://postgres:postgres@localhost/height_collector'
+#app.config['SQLALCHEMY_DATABASE_URI']='postgres://edtdcaosrrepyl:3dc5c01129714e48dac1930bf4dbb81d62a4c342635842c90f3f4796d7a23cd5@ec2-23-23-80-20.compute-1.amazonaws.com:5432/dbofqjn1mmqi6o?sslmode=require'
 db=SQLAlchemy(app)
 
 class Data(db.Model):
