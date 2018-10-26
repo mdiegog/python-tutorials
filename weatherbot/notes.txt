@@ -1,0 +1,20 @@
+================================================
+Tutorial video:
+https://youtu.be/xu6D_vLP5vY?list=WL
+
+conda create -n weatherbot python=3.6
+activate weatherbot
+python -m pip install --upgrade pip
+
+pip install rasa_nlu[spacy]
+pip install rasa_core
+pip install spacy
+python -m spacy download en
+
+git+https://github.com/apixu/apixu-python.git
+
+Instalar https://nodejs.org
+npm i -g rasa-nlu-trainer
+rasa-nlu-trainer
+
+https://github.com/JustinaPetr/Weatherbot_Tutorial
