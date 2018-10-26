@@ -1,0 +1,11 @@
+conda create -n rasa python=3.6
+activate
+python -m pip install --upgrade pip
+pip install rasa_core
+pip install rasa_nlu[tensorflow]
+
+tensorflow 1.10.0 has requirement numpy<=1.14.5,>=1.13.3, but you'll have numpy 1.15.2 which is incompatible.
+botocore 1.12.28 has requirement urllib3<1.24,>=1.20, but you'll have urllib3 1.24 which is incompatible.
+
+pip install numpy==1.14.5
+pip install urllib3==1.23
